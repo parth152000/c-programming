@@ -1,4 +1,4 @@
-Grading at Thu Jun 11 15:07:42 UTC 2020
+Grading at Thu Jun 11 18:14:03 UTC 2020
 Compiling your code
 Checking if your program prints "Hello World"
 Your file matched the expected output
