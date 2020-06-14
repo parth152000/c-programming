@@ -42,20 +42,11 @@ rectangle intersection(rectangle r1, rectangle r2) {
   //WRITE THIS FUNCTION
   r1= canonicalize(r1);
   r2= canonicalize(r2);
-  int ax=r1.x;
-  int bx=r1.x+ r1.width;
-  int ay=r1.y;
-  int by=r1.y + r1.height;
 
-  int cx=r2.x;
-  int dx=r2.x +r2.width;
-  int cy=r2.y;
-  int dy=r2.y +r2.height;
-
-  int lx=max(ax,cx);
-  int ux=min(bx,dx);
-  int ly=max(ay,cy);
-  int uy=min(by,dy);
+  int lx=max(r1.x,r2.x);
+  int ux=min((r1.x+r1.width),(r2.x+r2.width));
+  int ly=max(r1.y,r2.y);
+  int uy=min((r1.y+r1.height),(r2.y+r2.height));
 
   if((lx<=ux)&&(ly<=uy)){
     r1.x=lx;
